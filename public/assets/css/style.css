@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Navbar */
+.nav-item .nav-link {
+    font-size: 18px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: color 0.3s;
+}
+
+.fixed-top {
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+.scroll-nav-active {
+    background-color: white;
+    border-bottom: 2px solid #004085; /* Border bottom saat di-scroll */
+}
+
+.text-nav-active {
+    color: black !important; /* Warna teks menjadi hitam saat di-scroll */
+}
+
+.text-nav-inactive {
+    color: white !important; /* Warna teks default menjadi putih */
+}
+
+.navbar-dark {
+    color: #ffffff !important; /* Warna teks default menjadi putih */
+}
+
+#navbar-right-text {
+    font-size: 18px; /* Ukuran teks */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: white; /* Warna teks default */
+}
+
+.scroll-nav-active #navbar-right-text {
+    color: black; /* Warna teks saat di-scroll */
+}
+
+/* Hero Section */
+#hero {
+    background-image: url("../images/ams.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-title {
+    text-align: center;
+    color: white;
+}
+
+.hero-text {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+/* Card Styles */
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%; /* Pastikan elemen menempati seluruh tinggi */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #333;
+}
+
+.row > [class*='col-'] {
+    display: flex;
+}
+
+.card {
+    flex: 1;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .col h4 {
+    margin-bottom: 15px;
+}
+
+footer .col > div,
+footer .col > p {
+    margin-bottom: 10px;
+}
+
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+/* Layanan */
+#layanan .bg-light {
+    background-color: #f8f9fa !important;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.leader-text {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.leader-text h5 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.leader-text p {
+    margin: 5px 0 0;
+}
+
+.informasi-text {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.informasi-text h5 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.informasi-text p {
+    margin: 5px 0 0;
+}
+
+/* Navbar Link Styling */
+.nav-link {
+    font-size: 18px; /* Ukuran teks */
+}
+
+.navbar-brand {
+    transition: color 0.3s;
+}
+
+/* Image Styling */
+.leader-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -150px; /* Sesuaikan dengan kebutuhan */
+    position: relative;
+    z-index: 2; 
+}
+
+.image-left {
+    max-width: 80%;
+    height: auto;
+}
+
+.bg-image-right {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: flex-start; 
+    margin-top: 40px; 
+}
+
+.image-right {
+    width: auto;
+    height: 700px; 
+    object-fit: cover; 
+}
+
+.bg-image-right .text-center {
+    margin-bottom: 20px; 
+}
+
+.bg-image-right h2 {
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+}
+
+
+@media (max-width: 992px) {
+    .leader-container {
+        margin-top: 0; 
+    }
+    .bg-image-right {
+        margin-top: 0; 
+    }
+    .image-right {
+        height: auto;
+    }
+}
+
+/* Footer Styles */
+footer {
+    color: black;
+    padding: 20px 0;
+}
+
+footer h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: left; /* Ratakan teks ke kiri */
+    color: black;
+}
+
+footer p {
+    color: black;
+}
+
+/* Khusus untuk tombol subscribe */
+footer .btn-outline-light {
+    color: red;
+    border-color: red;
+}
+
+footer .btn-outline-light:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Mengatur ikon sosial */
+.social-icons .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    footer h4 {
+        text-align: center; /* Ratakan teks ke tengah untuk layar kecil */
+    }
+
+    footer .col {
+        text-align: center; /* Ratakan konten kolom ke tengah untuk layar kecil */
+    }
+}
