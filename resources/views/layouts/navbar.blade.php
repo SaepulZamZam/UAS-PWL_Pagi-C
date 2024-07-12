@@ -1,6 +1,7 @@
 <!-- navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark py-3 fixed-top {{Request::segment(1) == '' ? '' : 'bg-white shadow'}} ">
     <div class="container-fluid">
+    <img src="{{ asset('assets/icon/logo.png')}}" height="55" width="55" alt="">
       <a class="navbar-brand text-nav-inactive" href="#">Beranda</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,11 +23,16 @@
           </li>
         </ul>
         <div class="d-flex">
-          
+          @auth
+            <form action="/logout" method="POST">
+              @csrf
+              <button type="submit" class="btn btn-dark">Logout</button>
+            </form>
+          @else
+            <button class="btn btn-danger">Register</button>
+          @endauth
         </div>
-        <span class="navbar-text ms-auto" id="navbar-right-text">
-          <img src="assets/images/logo.png" alt="Logo" style="height: 30px; margin-right: 10px;"> purwakartakab.go.id
-        </span>
+  
       </div>
     </div>
   </nav>

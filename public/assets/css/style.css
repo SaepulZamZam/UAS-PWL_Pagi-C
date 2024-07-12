@@ -5,6 +5,13 @@ body {
 }
 
 /* Navbar */
+.btn-danger {
+    background-color: #bd0001;
+    border-radius: 15px;
+    border-color: #bd0001;
+    padding: 15px 30px;
+    color: white;
+}
 .nav-item .nav-link {
     font-size: 18px;
     margin-left: 5px;
@@ -18,7 +25,8 @@ body {
 
 .scroll-nav-active {
     background-color: white;
-    border-bottom: 2px solid #004085; /* Border bottom saat di-scroll */
+    /* border-bottom: 2px solid #004085; */
+    box-shadow: 1px 1px 11px -1px rgba(1, 1, 1, .0);
 }
 
 .text-nav-active {
@@ -77,7 +85,7 @@ body {
     transition: transform 0.2s ease-in-out;
     display: flex;
     flex-direction: column;
-    min-height: 100%; /* Pastikan elemen menempati seluruh tinggi */
+    height: 100%; /* Pastikan elemen menempati seluruh tinggi */
 }
 
 .card:hover {
@@ -86,20 +94,21 @@ body {
 
 .card-img-top {
     width: 100%;
-    height: auto;
+    height: 200px; /* Tetapkan tinggi gambar agar seragam */
     object-fit: cover;
 }
 
 .card-body {
     padding: 15px;
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
+    flex-grow: 1; /* Buat card-body tumbuh untuk memenuhi ruang yang tersedia */
 }
 
 .card-title {
     font-size: 1.5rem;
     font-weight: 600;
+    color: #333;
 }
 
 .card-text {
@@ -107,32 +116,39 @@ body {
     color: #333;
 }
 
-.row > [class*='col-'] {
-    display: flex;
+.text-secondary {
+    color: #6c757d !important;
 }
 
-.card {
-    flex: 1;
+.text-danger {
+    color: #bd0001 !important;
 }
 
-footer .col {
-    display: flex;
-    flex-direction: column;
+.btn-outline-danger {
+    border-radius: 15px;
+    border-color: #bd0001;
+    padding: 15px 30px;
+    color: #bd0001;
+    background-color: transparent;
+    transition: all 0.3s ease;
 }
 
-footer .col h4 {
-    margin-bottom: 15px;
+.btn-outline-danger:hover {
+    background-color: #bd0001;
+    color: #fff;
 }
 
-footer .col > div,
-footer .col > p {
-    margin-bottom: 10px;
+.header-berita {
+    margin-bottom: 2rem;
 }
 
+.footer-berita {
+    margin-top: 2rem;
+}
 
 .btn-primary {
     background-color: #007bff;
-    border-color: #007bff;
+    border-color: #007bff;  
 }
 
 .btn-primary:hover {
