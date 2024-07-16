@@ -19,43 +19,20 @@ body {
     transition: color 0.3s;
 }
 
-.fixed-top {
-    transition: background-color 0.3s, color 0.3s, border 0.3s;
-}
-
-.scroll-nav-active {
+.scroll-nav-active{
     background-color: white;
-    /* border-bottom: 2px solid #004085; */
-    box-shadow: 1px 1px 11px -1px rgba(1, 1, 1, .0);
+    /* border-bottom: 1px solid #BD0001; */
+    box-shadow: 1px 1px 11px 1px rgba(1, 1, 1, .08);
 }
 
-.text-nav-active {
-    color: black !important; /* Warna teks menjadi hitam saat di-scroll */
+.text-nav-active{
+    color: black;
 }
 
-.text-nav-inactive {
-    color: white !important; /* Warna teks default menjadi putih */
-}
-
-.navbar-dark {
-    color: #ffffff !important; /* Warna teks default menjadi putih */
-}
-
-#navbar-right-text {
-    font-size: 18px; /* Ukuran teks */
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    color: white; /* Warna teks default */
-}
-
-.scroll-nav-active #navbar-right-text {
-    color: black; /* Warna teks saat di-scroll */
-}
 
 /* Hero Section */
 #hero {
-    background-image: url("../images/ams.jpg");
+    background-image: url("../images/jtll.avif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -64,12 +41,12 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
+    color: black;
 }
 
 .hero-title {
     text-align: center;
-    color: white;
+    color: black;
 }
 
 .hero-text {
